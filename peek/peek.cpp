@@ -1,5 +1,5 @@
 #include "peek.h"
 
 void foo() {
-        implement_me();
+    implement_me();
 }

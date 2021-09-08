@@ -6,11 +6,21 @@ cc_library(
 cc_binary(
     name = "mainA",
     srcs = ["main.cpp"],
-    deps = ["//peekA"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//hal/brake",
+        "//hal/encoder",
+        "//peekA",
+    ],
 )
 
 cc_binary(
     name = "mainB",
     srcs = ["main.cpp"],
-    deps = ["//peekB"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//hal/brake",
+        "//hal/encoder",
+        "//peekB",
+    ],
 )

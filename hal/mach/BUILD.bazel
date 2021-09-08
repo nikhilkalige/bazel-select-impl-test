@@ -1,0 +1,3 @@
+load("//hal/mach:defs.bzl", "define_mach_config_settings")
+
+define_mach_config_settings(name = "mach_settings")

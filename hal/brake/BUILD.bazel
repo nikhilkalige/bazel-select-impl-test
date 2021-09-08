@@ -1,0 +1,10 @@
+load("//hal:defs.bzl", "require_mach_implementation")
+
+cc_library(
+    name = "brake",
+    srcs = ["brake.cpp"] + require_mach_implementation("brake"),
+    hdrs = ["brake.h"],
+    includes = ["."],
+    linkstatic = True,
+    visibility = ["//visibility:public"],
+)

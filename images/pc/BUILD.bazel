@@ -1,0 +1,10 @@
+load("//images:defs.bzl", "create_image")
+
+create_image(
+    name = "pc",
+    applications = [
+        "//:mainA",
+        "//:mainB",
+    ],
+    mach = "jetson",
+)

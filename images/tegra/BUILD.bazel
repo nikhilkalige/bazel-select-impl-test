@@ -1,0 +1,10 @@
+load("//images:defs.bzl", "create_image")
+
+create_image(
+    name = "tegra",
+    applications = [
+        "//:mainA",
+        "//:mainB",
+    ],
+    mach = "xavier",
+)

@@ -1,0 +1,7 @@
+load("//hal/mach:defs.bzl", "create_mach_implementation")
+
+create_mach_implementation(
+    name = "jetson",
+    brake = "brake.cpp",
+    encoder = ["encoder.cpp"],
+)

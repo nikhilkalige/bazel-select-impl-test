@@ -1,6 +1,10 @@
 #include "peek.h"
+#include "encoder.h"
+#include "brake.h"
 
 int main() {
-        foo();
-        return 0;
+    foo();
+    encoder();
+    brake();
+    return 0;
 }

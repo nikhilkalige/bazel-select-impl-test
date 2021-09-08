@@ -2,5 +2,5 @@
 #include "peek.h"
 
 void implement_me() {
-        std::cout << "peekB\n";
+    std::cout << "peekB\n";
 }

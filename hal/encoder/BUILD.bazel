@@ -1,0 +1,10 @@
+load("//hal:defs.bzl", "require_mach_implementation")
+
+cc_library(
+    name = "encoder",
+    srcs = ["encoder.cpp"] + require_mach_implementation("encoder"),
+    hdrs = ["encoder.h"],
+    includes = ["."],
+    linkstatic = True,
+    visibility = ["//visibility:public"],
+)
