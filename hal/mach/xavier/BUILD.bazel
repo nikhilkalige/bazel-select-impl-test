@@ -1,7 +1,7 @@
-load("//hal/mach:defs.bzl", "create_mach_implementation")
+load("//hal/mach:defs.bzl", "create_mach_implementation", "mach_info")
 
 create_mach_implementation(
     name = "xavier",
-    brake = "brake.cpp",
-    encoder = ["encoder.cpp"],
+    brake = mach_info(["brake.cpp"]),
+    encoder = mach_info(["encoder.cpp"]),
 )

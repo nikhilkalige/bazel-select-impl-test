@@ -1,10 +1,13 @@
 load("//hal:defs.bzl", "require_mach_implementation")
 
+mach = require_mach_implementation("brake")
+
 cc_library(
     name = "brake",
-    srcs = ["brake.cpp"] + require_mach_implementation("brake"),
+    srcs = ["brake.cpp"] + mach,
     hdrs = ["brake.h"],
     includes = ["."],
     linkstatic = True,
     visibility = ["//visibility:public"],
+    deps = mach,
 )
